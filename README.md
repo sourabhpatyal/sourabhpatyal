@@ -19,7 +19,7 @@
 
 ## 👋 About Me
 
-I’m an **Embedded Systems Engineer** and **Robotics ** based in India.  
+I’m an **Embedded Systems Engineer** and ** **Robotics** ** based in India.  
 I work close to the silicon—**bare-metal C, registers, timing, and protocols**—and mentor engineers to think like firmware architects, not just coders.
 
 ---
