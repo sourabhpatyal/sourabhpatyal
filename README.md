@@ -13,6 +13,8 @@
 
 </div>
 
+> _Layout inspired by @adi095’s profile._
+
 ---
 
 ## 👋 About Me
@@ -22,12 +24,28 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 ---
 
 ## ⚙️ Core Strengths
-- 🛠️ **Bare-metal C** (no HAL when not needed) • **CMSIS** • **MISRA-C mindset**
-- 🧾 **Datasheet-first design**: registers drive architecture and ISR boundaries
-- 🧵 **Precision ISRs**: latency budgets, lockless queues, state machines
-- 🔁 **Bootloaders & OTA**: DFU patterns, versioning, rollback strategy
-- 📡 **Protocol stacks**: UART/SPI/I²C/CAN, RS-485/Modbus RTU (master & slave)
-- 🔬 **Debugging discipline**: binary search, trace, instrumentation hooks
+- 🛠️ **Bare-metal C** (no HAL when not needed) • **CMSIS** • **MISRA-C mindset**  
+- 🧾 **Datasheet-first design** — registers drive architecture & ISR boundaries  
+- 🧵 **Precision ISRs** — latency budgets, lockless queues, finite state machines  
+- 🔁 **Bootloaders & OTA** — DFU patterns, versioning, rollback strategy  
+- 📡 **Protocol stacks** — UART/SPI/I²C/CAN, RS-485/Modbus RTU (master & slave)  
+- 🔬 **Debugging discipline** — binary search, trace, instrumentation hooks
+
+---
+
+## 🧰 Tech Stack (quick view)
+
+<!-- icon strip -->
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=c,cpp,cmake,git,linux,raspberrypi,arduino,stm32,python" alt="skills" />
+</p>
+
+**Languages**: C, Embedded C, basic C++  
+**Build**: Make/CMake • **MCU**: AVR, PIC, STM32, ESP32  
+**Tools**: Keil uVision, STM32CubeIDE, AVR-GCC, MPLAB X, OpenOCD  
+**PCB**: Altium, KiCad  
+**Infra**: Node-RED, Mosquitto MQTT, Grafana  
+**Standards**: CMSIS, MISRA-C mindset
 
 ---
 
@@ -57,7 +75,7 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 
 ---
 
-## 🛠️ Selected Projects (Problem ➜ System)
+## 🚀 Selected Projects (Problem ➜ System)
 - 🚗 **Vehicle Tracker** — GNSS + LCD + DGUS  
   *Event-driven firmware, buffered IO, NMEA parsing, fault-safe state machine.*
 - 🔋 **Energy Logger** — STM32 + BLE + mini Web UI  
@@ -73,34 +91,23 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 - 💡 **Pattern LED Trainer** — 500+ logic drills  
   *Teaches timing, debouncing, state transitions.*
 
+> _Tip:_ Pin your best repos so they appear on your profile (Settings → Customize your pins).
+
 ---
 
 ## 🎓 Teaching & Mentoring
-- **AVR & PIC in C** (bare-metal mindset, not Arduino)
+- **AVR & PIC in C** (bare-metal mindset, not Arduino)  
 - **Peripherals**: GPIO, ADC, Timers, PWM, Interrupts, DMA basics  
 - **Protocols**: UART, SPI, I²C, Modbus RTU (Master/Slave)  
-- **Linux GPIO on Raspberry Pi** with Python
-- **Altium PCB** for practical projects
+- **Linux GPIO on Raspberry Pi** with Python  
+- **Altium PCB** for practical projects  
 - **Debugging Mindset**: instrumentation hooks, traces, and fault isolation
 
 > *Looking to run a cohort or 1:1 deep-dive?* → Email me.
 
 ---
 
-## 🧰 Tech Stack (quick view)
-**Languages**: C, Embedded C, basic C++ • **Build**: Make/CMake • **MCU**: AVR, PIC, STM32, ESP32  
-**Tools**: Keil uVision, STM32CubeIDE, AVR-GCC, MPLAB X, OpenOCD • **PCB**: Altium, KiCad  
-**Infra**: Node-RED, Mosquitto MQTT, Grafana • **Standards**: CMSIS, MISRA-C mindset
-
----
-
-## 💭 Philosophy
-> *“No HAL? No problem. No RTOS? Write your own.”*  
-> *“Every register tells a story—learn to listen.”*
-
----
-
-## 🧪 Signature Snippets
+## 🧪 Signature Snippet
 
 <details>
 <summary><b>Minimal ISR-safe ring buffer (RX)</b></summary>
@@ -108,10 +115,18 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 ```c
 typedef struct { volatile uint8_t q[128]; volatile uint8_t h, t; } rb_t;
 
-static inline void rb_put(rb_t* r, uint8_t b){ uint8_t n=(r->h+1)&127; if(n!=r->t){ r->q[r->h]=b; r->h=n; } }
-static inline int  rb_get(rb_t* r){ if(r->t==r->h) return -1; uint8_t b=r->q[r->t]; r->t=(r->t+1)&127; return b; }
+static inline void rb_put(rb_t* r, uint8_t b){
+    uint8_t n = (r->h + 1) & 127;
+    if (n != r->t) { r->q[r->h] = b; r->h = n; }
+}
+static inline int rb_get(rb_t* r){
+    if (r->t == r->h) return -1;
+    uint8_t b = r->q[r->t];
+    r->t = (r->t + 1) & 127;
+    return b;
+}
 
 // ISR (UART RX):
 void USARTx_IRQHandler(void){
-    if(UART_RXNE()){ rb_put(&rxbuf, UART_READ()); }
+    if (UART_RXNE()) { rb_put(&rxbuf, UART_READ()); }
 }
