@@ -18,12 +18,14 @@
 ---
 
 ## 👋 About Me
-I’m an **Embedded Systems Engineer** and **Technical Trainer** based in India.  
+
+I’m an **Embedded Systems Engineer** and **Robotics ** based in India.  
 I work close to the silicon—**bare-metal C, registers, timing, and protocols**—and mentor engineers to think like firmware architects, not just coders.
 
 ---
 
 ## ⚙️ Core Strengths
+
 - 🛠️ **Bare-metal C** (no HAL when not needed) • **CMSIS** • **MISRA-C mindset**  
 - 🧾 **Datasheet-first design** — registers drive architecture & ISR boundaries  
 - 🧵 **Precision ISRs** — latency budgets, lockless queues, finite state machines  
@@ -40,6 +42,7 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
   <img src="https://skillicons.dev/icons?i=c,cpp,cmake,git,linux,raspberrypi,arduino,stm32,python" alt="skills" />
 </p>
 
+
 **Languages**: C, Embedded C, basic C++  
 **Build**: Make/CMake • **MCU**: AVR, PIC, STM32, ESP32  
 **Tools**: Keil uVision, STM32CubeIDE, AVR-GCC, MPLAB X, OpenOCD  
@@ -50,6 +53,7 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 ---
 
 ## 🧵 Hardware I Work With
+
 
 | MCU / SoC                | What I Build On It                                                      |
 |--------------------------|-------------------------------------------------------------------------|
@@ -64,6 +68,7 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 
 ## 🔄 Protocols & Buses
 
+
 | Stack / Bus               | Notes                                                                  |
 |---------------------------|------------------------------------------------------------------------|
 | **UART**                  | CLI + framed packets + CRC; RX ring buffers + ISR-driven TX            |
@@ -76,6 +81,7 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 ---
 
 ## 🚀 Selected Projects (Problem ➜ System)
+
 - 🚗 **Vehicle Tracker** — GNSS + LCD + DGUS  
   *Event-driven firmware, buffered IO, NMEA parsing, fault-safe state machine.*
 - 🔋 **Energy Logger** — STM32 + BLE + mini Web UI  
@@ -96,6 +102,7 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 ---
 
 ## 🎓 Teaching & Mentoring
+
 - **AVR & PIC in C** (bare-metal mindset, not Arduino)  
 - **Peripherals**: GPIO, ADC, Timers, PWM, Interrupts, DMA basics  
 - **Protocols**: UART, SPI, I²C, Modbus RTU (Master/Slave)  
