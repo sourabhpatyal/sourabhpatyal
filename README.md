@@ -37,7 +37,7 @@ I work close to the silicon—**bare-metal C, registers, timing, and protocols**
 
 <!-- icon strip -->
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=c,cpp,cmake,git,linux,raspberrypi,arduino,stm32,python,avr,pic" alt="skills" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,cmake,git,linux,raspberrypi,arduino,stm32,python" alt="skills" />
 </p>
 
 **Languages**: C, Embedded C, basic C++  
