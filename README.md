@@ -1,119 +1,117 @@
-## Hi there 👋
+<!-- Profile README -->
 
-<!--
-**sourabhpatyal/sourabhpatyal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+# 🔌 Sourabh Patiyal  
+**Embedded Engineer • Mentor • Microcontroller Whisperer**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-# <h1 align="center">🔌 Sourabh Patiyal</h1>
-<h3 align="center"> Embedded Engineer • Mentor • Microcontroller Whisperer</h3>
+*“I don’t just blink LEDs — I light up understanding.”*
 
+[![Email](https://img.shields.io/badge/Email-sourabhpatyal%40gmail.com-informational?style=flat)](mailto:sourabhpatyal@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sourabhpatyal-blue?style=flat)](https://www.linkedin.com/in/sourabh-patiyal-0b956912b/)
+[![GitHub](https://img.shields.io/badge/GitHub-sourabhpatyal-black?style=flat)](https://github.com/sourabhpatyal)
 
--------------
-
-## 👋 Hello, World!
-
-I'm **Sourabh Patyal**, an **Embedded Systems Engineer** and **Technical Trainer** from 🇮🇳 India.  
-With a passion for **bare-metal logic** and a mission to **mentor future engineers**, I dive deep into **microcontroller programming**, **hardware protocols**, and **system-level design**.
-
-> 🧠 *“I don’t just blink LEDs — I light up understanding.”*
+</div>
 
 ---
 
-
-
-## ⚙️ My Embedded DNA
-
-- 🛠️ **Bare-metal C** – No HAL, no layers — just you and the silicon  
-- 🧾 **Datasheet Diver** – Registers don’t scare me, they guide me  
-- ⚡ **Bitwise Thinker** – Every bit has a story  
-- 🧵 **Interrupt Sculptor** – Precision ISR designs  
-- 🧠 **Debugging Mentor** – Find it. Fix it. Learn it.
+## 👋 About Me
+I’m an **Embedded Systems Engineer** and **Technical Trainer** based in India.  
+I work close to the silicon—**bare-metal C, registers, timing, and protocols**—and mentor engineers to think like firmware architects, not just coders.
 
 ---
 
-## 🧵 Hardware I Talk To
-
-| Microcontroller / SoC     | Projects / Skills Mastered                             |
-|---------------------------|--------------------------------------------------------|
-| 🧠 **AVR ATmega8/328P**    | UART, ADC, Modbus RTU, LED Logic, Custom Protocols     |
-| 📟 **PIC 16F / 18F**        | EEPROM, LCD, 7-Segment, Timer-Based Control            |
-| 🚀 **STM32F1 / F4**         | FATFS SD Card, BLE, GPS, Web Server                    |
-| 🔩 **8051 / AT89C52**       | LED Patterns, Delays, Timer Logics                     |
-| 🌐 **ESP32 / ESP8266**      | WiFi MQTT, Node-RED, BLE Mesh                          |
-| 🍓 **Raspberry Pi 4**       | GPIO Control, Python Automation, ROS & Makefile Tasks  |
+## ⚙️ Core Strengths
+- 🛠️ **Bare-metal C** (no HAL when not needed) • **CMSIS** • **MISRA-C mindset**
+- 🧾 **Datasheet-first design**: registers drive architecture and ISR boundaries
+- 🧵 **Precision ISRs**: latency budgets, lockless queues, state machines
+- 🔁 **Bootloaders & OTA**: DFU patterns, versioning, rollback strategy
+- 📡 **Protocol stacks**: UART/SPI/I²C/CAN, RS-485/Modbus RTU (master & slave)
+- 🔬 **Debugging discipline**: binary search, trace, instrumentation hooks
 
 ---
 
-## 🔄 Protocols I Don’t Just Use — I Build With
+## 🧵 Hardware I Work With
 
-| Protocol         | Applications                             |
-|------------------|------------------------------------------|
-| 🟠 **UART**       | Serial Console, Command Parser, CRC       |
-| 🔵 **SPI**        | Displays, Sensors, SD Cards               |
-| 🟢 **I2C**        | RTC, EEPROM, Bit-banged Solutions         |
-| 🔴 **RS-485 / Modbus RTU** | Master-Slave, Register Mapping        |
-| 📊 **MQTT**       | Node-RED, Grafana Dashboards, IIoT Logs   |
-
----
-
-
-## 🛠️ Projects That Solve Real Problems
-
-🚗 **Vehicle Tracker** – GNSS + LCD + DGUS Screen  
-🔋 **Energy Logger** – STM32 + BLE + Web Server  
-📡 **Modbus RTU MCU System** – ATmega8 + MAX485  
-📶 **BLE Mesh + Android App Sync**  
-📈 **IIoT Dashboard** – MQTT + Node-RED + Grafana  
-🤖 **Obstacle Avoidance Bot** – IR + Ultrasonic Sensors  
-💡 **Pattern-Based LED Trainer** – 500+ Logic Exercises
+| MCU / SoC                | What I Build On It                                                      |
+|--------------------------|-------------------------------------------------------------------------|
+| **AVR ATmega8 / 328P**   | UART/ADC, Modbus RTU (MAX485), LED logic trainers, command parsers     |
+| **PIC 16F / 18F**        | EEPROM cfg, LCD/7-segment, timer frameworks                            |
+| **STM32F1 / F4**         | FATFS + SD, BLE/GPS, lightweight web server, ring buffers, DMA basics  |
+| **8051 / AT89C52**       | Timing labs, ISR hygiene, classic peripheral bring-up                   |
+| **ESP32 / ESP8266**      | Wi-Fi MQTT, Node-RED integrations, BLE Mesh experiments                |
+| **Raspberry Pi 4**       | Python GPIO automation, service daemons, ROS/Makefile workflows        |
 
 ---
 
+## 🔄 Protocols & Buses
 
-
-## 🎓 I Teach & Mentor On
-
-- ✅ AVR & PIC Microcontroller Programming (C, Bare-Metal)
-- ✅ Protocols: UART, SPI, I2C, Modbus RTU
-- ✅ GPIO, ADC, Timers, PWM, Interrupts
-- ✅ Embedded Linux GPIO + Raspberry Pi Python GPIO
-- ✅ Altium PCB Design for Real Projects
-- ✅ Logic Thinking & Embedded Debugging Mindset
+| Stack / Bus               | Notes                                                                  |
+|---------------------------|------------------------------------------------------------------------|
+| **UART**                  | CLI + framed packets + CRC; RX ring buffers + ISR-driven TX            |
+| **SPI**                   | Sensors, SD; full-duplex DMA patterns                                  |
+| **I²C**                   | RTC/EEPROM; bit-bang fallbacks                                         |
+| **RS-485 / Modbus RTU**   | Master/Slave, register map design, timeout strategy                    |
+| **MQTT**                  | IIoT pipelines (Node-RED → Grafana)                                    |
+| **CAN (basic)**           | ID planning, filter masks, mailbox hygiene                             |
 
 ---
 
+## 🛠️ Selected Projects (Problem ➜ System)
+- 🚗 **Vehicle Tracker** — GNSS + LCD + DGUS  
+  *Event-driven firmware, buffered IO, NMEA parsing, fault-safe state machine.*
+- 🔋 **Energy Logger** — STM32 + BLE + mini Web UI  
+  *Persistent ring-buffer logging, config channel, versioned settings.*
+- 📡 **Modbus RTU Stack** — ATmega8 + MAX485  
+  *Register model, CLI tools, deterministic timing under bus contention.*
+- 📶 **BLE Mesh + Android Sync**  
+  *Resilient config transport, failure semantics, OTA flow draft.*
+- 📈 **IIoT Dashboard** — MQTT → Node-RED → Grafana  
+  *Topic taxonomy, alert rules, retention windows.*
+- 🤖 **Obstacle-Avoid Bot** — IR + Ultrasonic  
+  *Sensor fusion → PWM drive; watchdog + brown-out handling.*
+- 💡 **Pattern LED Trainer** — 500+ logic drills  
+  *Teaches timing, debouncing, state transitions.*
 
+---
 
-## 💭 My Coding Philosophy
+## 🎓 Teaching & Mentoring
+- **AVR & PIC in C** (bare-metal mindset, not Arduino)
+- **Peripherals**: GPIO, ADC, Timers, PWM, Interrupts, DMA basics  
+- **Protocols**: UART, SPI, I²C, Modbus RTU (Master/Slave)  
+- **Linux GPIO on Raspberry Pi** with Python
+- **Altium PCB** for practical projects
+- **Debugging Mindset**: instrumentation hooks, traces, and fault isolation
 
-> 🧩 *“No HAL? No Problem. No RTOS? Write your own.”*  
-> 🧠 *“Every register tells a story. Just learn to listen.”*
+> *Looking to run a cohort or 1:1 deep-dive?* → Email me.
 
-``
+---
 
+## 🧰 Tech Stack (quick view)
+**Languages**: C, Embedded C, basic C++ • **Build**: Make/CMake • **MCU**: AVR, PIC, STM32, ESP32  
+**Tools**: Keil uVision, STM32CubeIDE, AVR-GCC, MPLAB X, OpenOCD • **PCB**: Altium, KiCad  
+**Infra**: Node-RED, Mosquitto MQTT, Grafana • **Standards**: CMSIS, MISRA-C mindset
 
-📫 **Let's Connect**
-📧 Email: sourabhpatyal@gmail.com
-💼 LinkedIn: [linkedin.com/in/sourabhpatyal](https://www.linkedin.com/in/sourabh-patiyal-0b956912b/)
-🌍 GitHub: [github.com/sourabhpatyal](https://github.com/sourabhpatyal)
-📍 Location: India 🇮🇳
+---
 
+## 💭 Philosophy
+> *“No HAL? No problem. No RTOS? Write your own.”*  
+> *“Every register tells a story—learn to listen.”*
 
+---
 
-🎯 **Mission & Vision**
-✅ Teach complex topics in simplified ways
-✅ Build real-world projects with clean logic
-✅ Spread embedded enthusiasm across the world
-✅ Contribute to next-gen robotic & IoT innovations
+## 🧪 Signature Snippets
 
-🔧 “**Mastering the micro to engineer the macro.**”
+<details>
+<summary><b>Minimal ISR-safe ring buffer (RX)</b></summary>
+
+```c
+typedef struct { volatile uint8_t q[128]; volatile uint8_t h, t; } rb_t;
+
+static inline void rb_put(rb_t* r, uint8_t b){ uint8_t n=(r->h+1)&127; if(n!=r->t){ r->q[r->h]=b; r->h=n; } }
+static inline int  rb_get(rb_t* r){ if(r->t==r->h) return -1; uint8_t b=r->q[r->t]; r->t=(r->t+1)&127; return b; }
+
+// ISR (UART RX):
+void USARTx_IRQHandler(void){
+    if(UART_RXNE()){ rb_put(&rxbuf, UART_READ()); }
+}
